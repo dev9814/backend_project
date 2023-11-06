@@ -1,0 +1,20 @@
+{
+  "name": "backend_project",
+  "version": "1.0.0",
+  "description": "\"This is a complete backend development project indusrty grade\"",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "nodemon src/index.js"
+  },
+  "keywords": [
+    "backend",
+    "industry"
+  ],
+  "author": "Devdutt",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  }
+}
