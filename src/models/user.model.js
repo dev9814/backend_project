@@ -2,7 +2,8 @@ import mongoose, {Schema} from "mongoose";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-
+// here we are using "new" keyword because we are creating new Object 
+// continue... schema and of class Schema
 const userSchema = new Schema(
     {
         username: {
@@ -52,6 +53,7 @@ const userSchema = new Schema(
     }
 )
 
+// Here this is the object which calls the userSchema
 userSchema.pre("save", async function (next) {
     if(! this.isModified("password")) return next();
 
